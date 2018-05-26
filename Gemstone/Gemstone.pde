@@ -111,8 +111,8 @@ PVector mousePos()
   int y = mouseY-44;
   x=x/64;
   y=y/64;
-  //constrain(x,0,7);         ISSUE: can select tiles off the board
-  //constrain(y,0,7);
+  x = constrain(x,0,7);         //ISSUE: can select tiles off the board
+  y = constrain(y,0,7);
   return new PVector(x,y);
 }
 
