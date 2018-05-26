@@ -27,8 +27,8 @@ boolean isMoveValid(PVector tile1, PVector tile2)
 */
 boolean areTilesAdjacent(PVector tile1, PVector tile2)
 {
-  println(abs(tile1.x-tile2.x));
-  println(abs(tile1.y-tile2.y));
+  //println(abs(tile1.x-tile2.x));
+  //println(abs(tile1.y-tile2.y));
   if((abs(tile1.x-tile2.x)<=1 && abs(tile1.y-tile2.y)<=1) && !(int(abs(tile1.x-tile2.x)+abs(tile1.y-tile2.y))==2))
   {
     return true;
